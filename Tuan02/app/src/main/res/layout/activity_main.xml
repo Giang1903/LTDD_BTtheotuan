@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="100dp"
+    tools:context=".MainActivity">
+
+    <!-- Ảnh bo tròn -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgIntro"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/avatar"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/CircularImageView"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tiêu đề chính -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lập trình thiết bị di động"
+        android:textColor="#04401B"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imgIntro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tên người thực hiện -->
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Thị Hương Giang"
+        android:textColor="#3F848E"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nhóm các nút -->
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Thực hành 01 -->
+        <Button
+            android:id="@+id/thuchanh01"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#283BA0"
+            android:text="Thực hành 01"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp"
+            android:paddingVertical="10dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Thực hành 02 -->
+        <Button
+            android:id="@+id/thuchanh02"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:text="Thực hành 02"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="12dp"
+            android:paddingVertical="10dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Thực hành 03 -->
+        <Button
+            android:id="@+id/thuchanh03"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Thực hành 03"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:paddingVertical="10dp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

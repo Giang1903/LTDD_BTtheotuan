@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -62,22 +63,15 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
             // Lớp học phần
             Text(
                 text = "Lập trình thiết bị di động",
-                fontSize = 28.sp,
-                fontWeight = FontWeight.Bold
-            )
-
-
-            // MSSV
-            Text(
-                text = " 035305002939",
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold
             )
-            // Tên
+            //ten
             Text(
                 text = "Nguyễn Thị Hương Giang",
-                fontSize = 25.sp,
+                fontSize = 24.sp,
                 fontWeight = FontWeight.Bold
+
             )
 
             // Địa chỉ
